@@ -26,7 +26,7 @@ String [] items;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-listView=findViewById(R.id.listViewSong);
+        listView=findViewById(R.id.listViewSong);
         RuntimePermission();
 
     }
@@ -34,7 +34,7 @@ listView=findViewById(R.id.listViewSong);
         Dexter.withContext(this).withPermission(Manifest.permission.READ_EXTERNAL_STORAGE).withListener(new PermissionListener() {
             @Override
             public void onPermissionGranted(PermissionGrantedResponse permissionGrantedResponse) {
-displaySongs();
+            displaySongs();
             }
 
             @Override
@@ -44,7 +44,7 @@ displaySongs();
 
             @Override
             public void onPermissionRationaleShouldBeShown(PermissionRequest permissionRequest, PermissionToken permissionToken) {
-permissionToken.continuePermissionRequest();
+            permissionToken.continuePermissionRequest();
             }
         }).check();
     }
