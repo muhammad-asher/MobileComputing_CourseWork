@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">mc_CourseWork_App</string>
+    <string name="world">WORLD</string>
+    <string name="settings">Settings</string>
 </resources>
